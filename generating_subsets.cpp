@@ -8,7 +8,7 @@ int main() {
   vector<vector<int>> subsets;
   for (int mask = 0; mask < (1 << n); mask++) {
     vector<int> subset;
-    for(int i = 0; i < n; ++) {
+    for(int i = 0; i < n; i++) {
       if (mask & (1 << i)) subset.push_back(i);
     }
     subsets.push_back(subset);
