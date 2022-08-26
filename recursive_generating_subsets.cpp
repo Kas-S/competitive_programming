@@ -9,10 +9,6 @@ vector<int> subset;
 void search(int k) {
 	if (k == n) {
 		subsets.push_back(subset);
-		for (int i = 0; i < subset.size(); i++) {
-			cout << subset[i] << ' ';
-		}
-		cout << '\n';
 	} else {
 		search(k + 1);
 		subset.push_back(k);
